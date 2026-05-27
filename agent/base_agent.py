@@ -20,7 +20,7 @@ class BaseAgent(Agent):
         self.custom_prompt = custom_prompt
         self.history: List[Message] = []
     
-    def run(self, input, **kwargs) -> str:
+    def run(self, input: str, **kwargs) -> str:
         """ 
         执行Agent 
         1、拼接系统prompt，说明内容包含初始化所有的内容：系统prompt、可用的工具
