@@ -3,3 +3,12 @@ tools/__pycache__/__init__.cpython-312.pyc
 core/__pycache__/register.cpython-312.pyc
 core/__pycache__/__init__.cpython-312.pyc
 .vscode/settings.json
+agent/__pycache__/__init__.cpython-312.pyc
+agent/__pycache__/base_agent.cpython-312.pyc
+core/__pycache__/agent_client.cpython-312.pyc
+core/__pycache__/agent.cpython-312.pyc
+core/__pycache__/config.cpython-312.pyc
+core/__pycache__/message.cpython-312.pyc
+test_baseagent.py
+test_client.py
+test_message.py

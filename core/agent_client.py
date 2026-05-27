@@ -1,9 +1,6 @@
 import os
 from typing import Dict, List
 from openai import OpenAI
-from dotenv import load_dotenv
-
-load_dotenv()
 
 class AgentClient:
     '''
@@ -47,20 +44,3 @@ class AgentClient:
         except Exception as e:
             print(f"❌ 调用LLM API时发生错误: {e}")
             return None
-        
-if __name__ == "__main__":
-    try:
-        agent = AgentClient()
-
-        messages = [
-            {"role": "system", "content": "你是一个问答助手"},
-            {"role": "user", "content": "你是谁？"}
-        ]
-
-        print("-----调用LLM-----")
-        response = agent.think(message=messages, temperature=0.5)
-        if not response:
-            print("LLM回答：")
-            print(response)
-    except Exception as e:
-        print(e)
